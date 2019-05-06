@@ -7,7 +7,7 @@ ENV LIBRARY_PATH=/lib:/usr/lib
 WORKDIR /app
 
 RUN apk add --no-cache --virtual bili git build-base python-dev py-pip jpeg-dev zlib-dev && \
-    git clone https://github.com/yjqiang/bili2.0.git /app && \
+    git clone https://github.com/gangxiaoji/bili2.0.git /app && \
     pip install --no-cache-dir -r requirements.txt && \
     rm -r /var/cache/apk && \
     rm -r /usr/share/man && \
